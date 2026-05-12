@@ -1,0 +1,43 @@
+<section class="hero">
+  <div class="wrap">
+    <h1>{{ 'STORE.HERO_TITLE' | t }}</h1>
+    <p>{{ 'STORE.HERO_SUB' | t }}</p>
+  </div>
+</section>
+
+<section class="wrap main">
+  <div class="chips" role="tablist">
+    <button
+      type="button"
+      class="chip"
+      [class.active]="selectedCategoryId() === null"
+      (click)="selectCategory(null)">
+      {{ 'STORE.ALL_CATEGORIES' | t }}
+    </button>
+    @for (c of categories(); track c.id) {
+      <button
+        type="button"
+        class="chip"
+        [class.active]="selectedCategoryId() === c.id"
+        (click)="selectCategory(c.id)">
+        {{ categoryLabel(c) }}
+      </button>
+    }
+  </div>
+
+  @if (error()) {
+    <p class="error">{{ error() }}</p>
+  }
+
+  @if (loading()) {
+    <p class="muted">{{ 'STORE.LOADING' | t }}</p>
+  } @else if (!products().length) {
+    <p class="muted">{{ 'STORE.EMPTY_PRODUCTS' | t }}</p>
+  } @else {
+    <div class="grid">
+      @for (p of products(); track p.id) {
+        <app-product-card [product]="p" />
+      }
+    </div>
+  }
+</section>

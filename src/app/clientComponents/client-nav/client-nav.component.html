@@ -1,0 +1,92 @@
+<nav
+  class="main-nav"
+  [class.scrolled]="isScrolled || isAuthRoute()"
+  [class.light]="true"
+  [class.hide-on-mobile]="isOffcanvasOpen">
+  <div class="container nav-container">
+    <a class="logo" [routerLink]="isAuthRoute() ? '/login' : '/store'">
+      <img src="assets/images/elec logo.png" alt="Site Logo" />
+      <span class="brand-text">{{ 'STORE.BRAND' | t }}</span>
+    </a>
+
+    @if (!isAuthRoute()) {
+      <ul class="nav-links">
+        <li>
+          <a routerLink="/store" routerLinkActive="active-link">{{ 'NAV.STORE' | t }}</a>
+        </li>
+        <li>
+          <a routerLink="/orders" routerLinkActive="active-link">{{ 'NAV.ORDERS' | t }}</a>
+        </li>
+      </ul>
+    }
+
+    <div class="language-switcher">
+      <button type="button" class="lang-pill" (click)="changeLang('ar')">العربية</button>
+      <button type="button" class="lang-pill" (click)="changeLang('en')">English</button>
+    </div>
+
+    @if (!isAuthRoute()) {
+      <a routerLink="/cart" class="cart-pill" routerLinkActive="active-link">
+        {{ 'STORE.CART' | t }}
+        @if (cartCount() > 0) {
+          <span class="badge-count">{{ cartCount() }}</span>
+        }
+      </a>
+    }
+
+    @if (isLoggedIn() && !isAuthRoute()) {
+      <button type="button" class="logout-pill" (click)="logout()">{{ 'STORE.LOGOUT' | t }}</button>
+    }
+
+    <button class="hamburger-btn" type="button" (click)="toggleOffcanvas()" [class.active]="isOffcanvasOpen">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="offcanvas-overlay" (click)="closeOffcanvas()" [class.active]="isOffcanvasOpen"></div>
+
+<aside class="offcanvas-menu app-canvas-menu" [class.active]="isOffcanvasOpen" aria-label="Menu">
+  <div class="offcanvas-header">
+    <a class="logo" routerLink="/store" (click)="closeOffcanvas()">
+      <img src="assets/images/elec logo.png" alt="Site Logo" />
+    </a>
+    <button type="button" class="close-btn" (click)="closeOffcanvas()" aria-label="Close">&times;</button>
+  </div>
+
+  <p class="menu-tagline">{{ 'STORE.TAGLINE' | t }}</p>
+
+  <ul class="offcanvas-links">
+    @if (!isAuthRoute()) {
+      <li>
+        <a routerLink="/store" routerLinkActive="active-link" (click)="closeOffcanvas()">{{ 'NAV.STORE' | t }}</a>
+      </li>
+      <li>
+        <a routerLink="/cart" (click)="closeOffcanvas()">{{ 'STORE.CART' | t }} @if (cartCount() > 0) { ({{ cartCount() }}) }</a>
+      </li>
+      <li>
+        <a routerLink="/orders" (click)="closeOffcanvas()">{{ 'NAV.ORDERS' | t }}</a>
+      </li>
+      <li>
+        <a routerLink="/checkout" (click)="closeOffcanvas()">{{ 'STORE.CHECKOUT' | t }}</a>
+      </li>
+    }
+    <li>
+      <a routerLink="/login" (click)="closeOffcanvas()">{{ 'STORE.LOGIN' | t }}</a>
+    </li>
+  </ul>
+
+  <div class="offcanvas-lang">
+    <span class="lbl">{{ 'STORE.BRAND' | t }}</span>
+    <div class="lang-row">
+      <button type="button" (click)="changeLang('ar'); closeOffcanvas()">العربية</button>
+      <button type="button" (click)="changeLang('en'); closeOffcanvas()">English</button>
+    </div>
+  </div>
+
+  @if (isLoggedIn() && !isAuthRoute()) {
+    <button type="button" class="offcanvas-logout" (click)="logout(); closeOffcanvas()">{{ 'STORE.LOGOUT' | t }}</button>
+  }
+</aside>

@@ -1,0 +1,39 @@
+<header class="admin-topnav v2">
+  <div class="nav-profile">
+    <img src="assets/images/elec logo.png" alt="Site Logo" class="profile-avatar" />
+    <div class="profile-text">
+      <span class="welcome">Electro Store</span>
+      <strong class="username">Admin</strong>
+    </div>
+  </div>
+
+  <nav class="nav-center">
+    <a routerLink="/admin/dashboard" routerLinkActive="active" class="nav-link">
+      <i class="fa-solid fa-gauge-high"></i>
+      <span>Dashboard</span>
+    </a>
+    <a routerLink="/admin/products" routerLinkActive="active" class="nav-link">
+      <i class="fa-solid fa-box"></i>
+      <span>Products</span>
+    </a>
+    <a routerLink="/admin/categories" routerLinkActive="active" class="nav-link">
+      <i class="fa-solid fa-layer-group"></i>
+      <span>Categories</span>
+    </a>
+    <a routerLink="/admin/orders" routerLinkActive="active" class="nav-link">
+      <i class="fa-solid fa-receipt"></i>
+      <span>Orders</span>
+    </a>
+    <a routerLink="/admin/users" routerLinkActive="active" class="nav-link">
+      <i class="fas fa-users"></i>
+      <span>Users</span>
+    </a>
+  </nav>
+
+  <div class="nav-actions">
+    <span>Logout</span>
+    <button type="button" class="logout-btn" (click)="onLogout()">
+      <i class="fas fa-sign-out-alt"></i>
+    </button>
+  </div>
+</header>

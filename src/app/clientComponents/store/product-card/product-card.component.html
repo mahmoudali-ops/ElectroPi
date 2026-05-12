@@ -1,0 +1,25 @@
+<article class="card h-100">
+  <a [routerLink]="['/product', product.slug]" class="thumb">
+    @if (cover()) {
+      <img [src]="cover()" [alt]="product.name" loading="lazy" />
+    } @else {
+      <div class="thumb-placeholder">{{ product.name }}</div>
+    }
+  </a>
+  <div class="body">
+    <a [routerLink]="['/product', product.slug]" class="title">{{ product.name }}</a>
+    <p class="meta">
+      <span class="price">{{ product.price | number : '1.0-2' }}</span>
+      @if (product.rate) {
+        <span class="rate">{{ 'STORE.RATING' | t }} {{ product.rate }}</span>
+      }
+    </p>
+    <div class="actions">
+      <button type="button" class="btn primary" [disabled]="!product.isAvailable" (click)="addToCart()">
+        <span class="icon">🛒</span>
+        {{ 'STORE.ADD_TO_CART' | t }}
+      </button>
+      <a class="btn ghost" [routerLink]="['/product', product.slug]">{{ 'STORE.VIEW_PRODUCT' | t }}</a>
+    </div>
+  </div>
+</article>

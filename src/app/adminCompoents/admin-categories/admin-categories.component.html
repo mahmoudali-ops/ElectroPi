@@ -1,0 +1,63 @@
+<div class="admin-page">
+  <div class="page-header">
+    <div>
+      <h1>Manage categories</h1>
+      <p>Create, update or remove category entries for the store.</p>
+    </div>
+  </div>
+
+  <section class="form-card">
+    <h2>{{ editMode ? 'Edit category' : 'Create category' }}</h2>
+    <form (ngSubmit)="saveCategory()">
+      <div class="row">
+        <label>
+          Slug
+          <input type="text" name="slug" [(ngModel)]="categoryForm.slug" required />
+        </label>
+        <label>
+          English name
+          <input type="text" name="nameEn" [(ngModel)]="categoryForm.nameEn" required />
+        </label>
+        <label>
+          Arabic name
+          <input type="text" name="nameAr" [(ngModel)]="categoryForm.nameAr" required />
+        </label>
+      </div>
+      <div class="actions">
+        <button class="btn primary" type="submit">{{ editMode ? 'Update category' : 'Create category' }}</button>
+        <button class="btn secondary" type="button" (click)="resetForm()">Cancel</button>
+      </div>
+      <p class="message error" *ngIf="formError()">{{ formError() }}</p>
+      <p class="message success" *ngIf="success()">{{ success() }}</p>
+    </form>
+  </section>
+
+  <section class="table-card">
+    <h2>Category list</h2>
+    <div class="loading" *ngIf="loading()">Loading categories…</div>
+    <div *ngIf="!loading() && categories().length === 0" class="empty-state">No categories available.</div>
+    <table *ngIf="!loading() && categories().length > 0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Slug</th>
+          <th>English</th>
+          <th>Arabic</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let category of categories()">
+          <td>{{ category.id }}</td>
+          <td>{{ category.slug }}</td>
+          <td>{{ translationName(category, 'en') }}</td>
+          <td>{{ translationName(category, 'ar') }}</td>
+          <td class="actions-cell">
+            <button class="btn secondary" type="button" (click)="editCategory(category)">Edit</button>
+            <button class="btn danger" type="button" (click)="deleteCategory(category.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>

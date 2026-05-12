@@ -1,0 +1,33 @@
+<div class="wrap">
+  <h1>{{ 'STORE.CART' | t }}</h1>
+
+  @if (loading()) {
+    <p class="muted">{{ 'STORE.LOADING' | t }}</p>
+  } @else if (!itemLines().length) {
+    <p class="muted">{{ 'STORE.CART_EMPTY' | t }}</p>
+    <a routerLink="/store" class="link">{{ 'STORE.CONTINUE_SHOPPING' | t }}</a>
+  } @else {
+    <ul class="list">
+      @for (it of itemLines(); track it.id) {
+        <li class="line">
+          <div class="name">{{ it.productName }}</div>
+          <div class="qty">
+            <button type="button" (click)="dec(it)">−</button>
+            <span>{{ it.quantity }}</span>
+            <button type="button" (click)="inc(it)">+</button>
+          </div>
+          <div class="price">{{ it.total | number : '1.0-2' }}</div>
+          <button type="button" class="rm" (click)="remove(it)">{{ 'STORE.REMOVE' | t }}</button>
+        </li>
+      }
+    </ul>
+    <div class="foot">
+      <div class="total">
+        {{ 'STORE.TOTAL' | t }}:
+        <strong>{{ cart()?.totalPrice | number : '1.0-2' }}</strong>
+      </div>
+      <button type="button" class="btn ghost" (click)="clear()">{{ 'STORE.CLEAR_CART' | t }}</button>
+      <a routerLink="/checkout" class="btn">{{ 'STORE.CHECKOUT' | t }}</a>
+    </div>
+  }
+</div>

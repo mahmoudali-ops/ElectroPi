@@ -1,0 +1,33 @@
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-row">
+      <div class="footer-col about">
+        <h6 class="footer-logo">
+          <img src="assets/images/electro-store-logo.svg" alt="Electro Store" height="40" />
+          {{ 'STORE.BRAND' | t }}
+        </h6>
+        <p class="footer-desc">{{ 'FOOTER.DESC' | t }}</p>
+      </div>
+
+      <div class="footer-col">
+        <h6 class="footer-title">{{ 'FOOTER.QUICK_LINKS' | t }}</h6>
+        <a routerLink="/store">{{ 'NAV.STORE' | t }}</a>
+        <a routerLink="/orders">{{ 'NAV.ORDERS' | t }}</a>
+        <a routerLink="/cart">{{ 'STORE.CART' | t }}</a>
+      </div>
+
+      <div class="footer-col">
+        <h6 class="footer-title">{{ 'STORE.BRAND' | t }}</h6>
+        <a routerLink="/checkout">{{ 'STORE.CHECKOUT' | t }}</a>
+        <a routerLink="/login">{{ 'STORE.LOGIN' | t }}</a>
+      </div>
+
+      <div class="footer-col">
+        <h6 class="footer-title">Contact</h6>
+        <p><i class="fas fa-envelope me-2"></i> support&#64;electrostore.local</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom text-center">© {{ 'STORE.BRAND' | t }}</div>
+</footer>

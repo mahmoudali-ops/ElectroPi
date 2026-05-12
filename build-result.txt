@@ -1,0 +1,258 @@
+
+> tour-site-client@0.0.0 build
+> ng build
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+- Building...
+
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+[baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+(node:15112) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:15112) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:15112) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:15112) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:15112) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+ERROR ReferenceError: localStorage is not defined
+    at s (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-RZTMVWAU.mjs:2:4247)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-H6IJLQKH.mjs:2:46581
+    at la (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:8:12690)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-H6IJLQKH.mjs:2:46573
+    at e._subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:16366)
+    at e._trySubscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:4399)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:4344
+    at Pt (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:2204)
+    at e.subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:4260)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:17362
+ERROR ReferenceError: localStorage is not defined
+    at s (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-RZTMVWAU.mjs:2:4247)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-H6IJLQKH.mjs:2:46581
+    at la (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:8:12690)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-H6IJLQKH.mjs:2:46573
+    at e._subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:16366)
+    at e._trySubscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:4399)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:4344
+    at Pt (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:2204)
+    at e.subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:4260)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:17362
+ERROR ReferenceError: localStorage is not defined
+    at s (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-RZTMVWAU.mjs:2:4247)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-H6IJLQKH.mjs:2:46581
+    at la (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:8:12690)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-H6IJLQKH.mjs:2:46573
+    at e._subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:16366)
+    at e._trySubscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:4399)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:4344
+    at Pt (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:2204)
+    at e.subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:4260)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/6c00d173-93e9-4bce-a520-4bc8bf19729a/chunk-Y4H6RTAL.mjs:4:17362
+ERROR ReferenceError: localStorage is not defined
+    at s (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/3bee5bbc-fabf-4f16-a927-cec96b3636c3/chunk-RZTMVWAU.mjs:2:4247)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/3bee5bbc-fabf-4f16-a927-cec96b3636c3/chunk-H6IJLQKH.mjs:2:46581
+    at la (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/3bee5bbc-fabf-4f16-a927-cec96b3636c3/chunk-Y4H6RTAL.mjs:8:12690)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/3bee5bbc-fabf-4f16-a927-cec96b3636c3/chunk-H6IJLQKH.mjs:2:46573
+    at e._subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/3bee5bbc-fabf-4f16-a927-cec96b3636c3/chunk-Y4H6RTAL.mjs:4:16366)
+    at e._trySubscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/3bee5bbc-fabf-4f16-a927-cec96b3636c3/chunk-Y4H6RTAL.mjs:4:4399)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/3bee5bbc-fabf-4f16-a927-cec96b3636c3/chunk-Y4H6RTAL.mjs:4:4344
+    at Pt (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/3bee5bbc-fabf-4f16-a927-cec96b3636c3/chunk-Y4H6RTAL.mjs:4:2204)
+    at e.subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/3bee5bbc-fabf-4f16-a927-cec96b3636c3/chunk-Y4H6RTAL.mjs:4:4260)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/3bee5bbc-fabf-4f16-a927-cec96b3636c3/chunk-Y4H6RTAL.mjs:4:17362
+ERROR ReferenceError: localStorage is not defined
+    at s (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-RZTMVWAU.mjs:2:4247)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-H6IJLQKH.mjs:2:46581
+    at la (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:8:12690)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-H6IJLQKH.mjs:2:46573
+    at e._subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:16366)
+    at e._trySubscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:4399)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:4344
+    at Pt (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:2204)
+    at e.subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:4260)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/243539f5-38c8-4bbc-ae52-30edd06b21be/chunk-Y4H6RTAL.mjs:4:17362
+ERROR ReferenceError: localStorage is not defined
+    at s (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/70dc8f5a-38e9-43aa-b9b9-e63e0169073a/chunk-RZTMVWAU.mjs:2:4247)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/70dc8f5a-38e9-43aa-b9b9-e63e0169073a/chunk-H6IJLQKH.mjs:2:46581
+    at la (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/70dc8f5a-38e9-43aa-b9b9-e63e0169073a/chunk-Y4H6RTAL.mjs:8:12690)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/70dc8f5a-38e9-43aa-b9b9-e63e0169073a/chunk-H6IJLQKH.mjs:2:46573
+    at e._subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/70dc8f5a-38e9-43aa-b9b9-e63e0169073a/chunk-Y4H6RTAL.mjs:4:16366)
+    at e._trySubscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/70dc8f5a-38e9-43aa-b9b9-e63e0169073a/chunk-Y4H6RTAL.mjs:4:4399)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/70dc8f5a-38e9-43aa-b9b9-e63e0169073a/chunk-Y4H6RTAL.mjs:4:4344
+    at Pt (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/70dc8f5a-38e9-43aa-b9b9-e63e0169073a/chunk-Y4H6RTAL.mjs:4:2204)
+    at e.subscribe (file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/70dc8f5a-38e9-43aa-b9b9-e63e0169073a/chunk-Y4H6RTAL.mjs:4:4260)
+    at file:///D:/SharkWorld%20-antigravify/.angular/prerender-root/70dc8f5a-38e9-43aa-b9b9-e63e0169073a/chunk-Y4H6RTAL.mjs:4:17362
+Browser bundles        
+Initial chunk files     | Names                      |  Raw size | Estimated transfer size
+styles-GCM4N7SI.css     | styles                     | 318.81 kB |                42.47 kB
+chunk-LUXSU2CM.js       | -                          | 185.82 kB |                53.97 kB
+chunk-7HUEKKXI.js       | -                          |  82.63 kB |                20.61 kB
+scripts-SQ7W6IC7.js     | scripts                    |  78.53 kB |                21.12 kB
+main-J36Z4JTH.js        | main                       |  64.96 kB |                17.17 kB
+polyfills-FFHMD2TL.js   | polyfills                  |  33.71 kB |                11.02 kB
+chunk-U76ONCVM.js       | -                          |  23.08 kB |                 4.99 kB
+chunk-ZLNL4CF3.js       | -                          | 885 bytes |               885 bytes
+chunk-3F3Z2RID.js       | -                          | 558 bytes |               558 bytes
+chunk-DU53ZBYK.js       | -                          |  91 bytes |                91 bytes
+
+                        | Initial total              | 789.04 kB |               172.85 kB
+
+Lazy chunk files        | Names                      |  Raw size | Estimated transfer size
+chunk-GLEKOUPU.js       | -                          |  43.65 kB |                 8.71 kB
+chunk-S5D6ICQJ.js       | client-layout-component    |  30.63 kB |                 6.02 kB
+chunk-RVRQP2X4.js       | -                          |  22.66 kB |                 6.21 kB
+chunk-YIC3RZCT.js       | admin-products-component   |  11.08 kB |                 2.99 kB
+chunk-4XMZGL3G.js       | shop-home-component        |   8.72 kB |                 2.78 kB
+chunk-F67UBAK3.js       | admin-layout-component     |   8.18 kB |                 1.99 kB
+chunk-ELEZG7HM.js       | admin-categories-component |   7.68 kB |                 2.30 kB
+chunk-RFEOCSA7.js       | users-component            |   7.67 kB |                 2.30 kB
+chunk-AYX6QYM5.js       | register-component         |   7.16 kB |                 2.11 kB
+chunk-RL7X3BSR.js       | notfound-component         |   6.67 kB |                 1.82 kB
+chunk-XZ2OORS3.js       | product-detail-component   |   6.26 kB |                 2.29 kB
+chunk-PBCOWJSK.js       | admin-orders-component     |   5.90 kB |                 1.93 kB
+chunk-QRYDJDMW.js       | login-component            |   5.71 kB |                 1.99 kB
+chunk-77WMV4B6.js       | checkout-page-component    |   5.53 kB |                 2.06 kB
+chunk-4ZJPB2JB.js       | cart-page-component        |   4.75 kB |                 1.67 kB
+...and 8 more lazy chunks files. Use "--verbose" to show all the files.
+
+
+Server bundles         
+Initial chunk files     | Names                      |  Raw size
+server.mjs              | server                     |   1.06 MB |                        
+chunk-DWUBIQZH.mjs      | -                          | 296.13 kB |                        
+polyfills.server.mjs    | polyfills.server           | 262.30 kB |                        
+chunk-Y4H6RTAL.mjs      | -                          | 200.35 kB |                        
+chunk-H6IJLQKH.mjs      | -                          |  82.72 kB |                        
+chunk-CDQX4NNA.mjs      | -                          |  19.28 kB |                        
+chunk-RZTMVWAU.mjs      | -                          |   6.99 kB |                        
+chunk-J4BDXTMW.mjs      | -                          |   3.99 kB |                        
+chunk-VVCT4QZE.mjs      | -                          |   2.48 kB |                        
+render-utils.server.mjs | render-utils.server        |   1.52 kB |                        
+chunk-VEAYPOTW.mjs      | -                          | 920 bytes |                        
+chunk-4UO6DUSU.mjs      | -                          | 592 bytes |                        
+main.server.mjs         | main.server                | 352 bytes |                        
+chunk-BGO3X7GO.mjs      | -                          | 124 bytes |                        
+
+Lazy chunk files        | Names                      |  Raw size
+chunk-RKWWIBM4.mjs      | -                          |  43.72 kB |                        
+chunk-FQLN6THN.mjs      | client-layout-component    |  30.72 kB |                        
+chunk-KYJO563L.mjs      | -                          |  22.69 kB |                        
+chunk-QZP2S7SI.mjs      | xhr2                       |  11.79 kB |                        
+chunk-FPF72IUV.mjs      | admin-products-component   |  11.14 kB |                        
+chunk-6F2YBWYF.mjs      | shop-home-component        |   8.79 kB |                        
+chunk-6ZR55BXO.mjs      | admin-layout-component     |   8.28 kB |                        
+chunk-7ZYI3WYA.mjs      | admin-categories-component |   7.74 kB |                        
+chunk-GZ6XX7UV.mjs      | users-component            |   7.74 kB |                        
+chunk-5I6VKQEN.mjs      | register-component         |   7.25 kB |                        
+chunk-VLPZRCWB.mjs      | notfound-component         |   6.73 kB |                        
+chunk-LDHRUESQ.mjs      | product-detail-component   |   6.36 kB |                        
+chunk-RGXY2LFH.mjs      | admin-orders-component     |   5.96 kB |                        
+chunk-DFIM2UMA.mjs      | login-component            |   5.81 kB |                        
+chunk-EFP6Y353.mjs      | checkout-page-component    |   5.63 kB |                        
+...and 9 more lazy chunks files. Use "--verbose" to show all the files.
+
+Prerendered 15 static routes.
+Output location: D:\SharkWorld -antigravify\dist\tour-site-client
+
+Application bundle generation complete. [13.943 seconds]
+
+Γû▓ [WARNING] Expected identifier but found whitespace [plugin angular-compiler] [css-syntax-error]
+
+    src/app/clientComponents/client-nav/client-nav.component.css:314:10:
+      314 Γöé   content: '';
+          Γò╡           ^
+
+
+Γû▓ [WARNING] Unexpected "''" [plugin angular-compiler] [css-syntax-error]
+
+    src/app/clientComponents/client-nav/client-nav.component.css:314:11:
+      314 Γöé   content: '';
+          Γò╡            ~~
+
+
+Γû▓ [WARNING] NG8107: The left side of this optional chain operation does not include 'null' or 'undefined' in its type, therefore the '?.' operator can be replaced with the '.' operator. [plugin angular-compiler]
+
+    src/app/clientComponents/store/product-detail/product-detail.component.html:22:32:
+      22 Γöé         @if (product()!.images?.length) {
+         Γò╡                                 ~~~~~~
+
+  Error occurs in the template of component ProductDetailComponent.
+
+    src/app/clientComponents/store/product-detail/product-detail.component.ts:15:15:
+      15 Γöé   templateUrl: './product-detail.component.html',
+         Γò╡                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Γû▓ [WARNING] NG8102: The left side of this nullish coalescing operation does not include 'null' or 'undefined' in its type, therefore the '??' operator can be safely removed. [plugin angular-compiler]
+
+    src/app/clientComponents/store/product-detail/product-detail.component.html:38:57:
+      38 Γöé ...ll">{{ 'STORE.RATING' | t }} {{ product()!.rate ?? 'ΓÇö' }}</span>
+         Γò╡                                    ~~~~~~~~~~~~~~~~~~~~~~
+
+  Error occurs in the template of component ProductDetailComponent.
+
+    src/app/clientComponents/store/product-detail/product-detail.component.ts:15:15:
+      15 Γöé   templateUrl: './product-detail.component.html',
+         Γò╡                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+Γû▓ [WARNING] 47 rules skipped due to selector errors:
+  .form-floating>~label -> Did not expect successive traversals.
+  & -> Empty sub-selector
+  &.swiper-horizontal -> Empty sub-selector
+  &.swiper-vertical -> Empty sub-selector
+  &.swiper-free-mode -> Empty sub-selector
+  &.swiper-centered -> Empty sub-selector
+  &.swiper-centered.swiper-horizontal -> Empty sub-selector
+  &.swiper-centered.swiper-vertical -> Empty sub-selector
+  &.swiper-button-disabled -> Empty sub-selector
+  &.swiper-button-hidden -> Empty sub-selector
+  .swiper-navigation-disabled & -> Unmatched selector: &
+  &.swiper-rtl .swiper-button-next -> Empty sub-selector
+  &.swiper-rtl~.swiper-button-next -> Empty sub-selector
+  &.swiper-rtl .swiper-button-prev -> Empty sub-selector
+  &.swiper-rtl~.swiper-button-prev -> Empty sub-selector
+  &.swiper-rtl .swiper-button-next -> Empty sub-selector
+  &.swiper-rtl~.swiper-button-next -> Empty sub-selector
+  &.swiper-rtl .swiper-button-prev -> Empty sub-selector
+  &.swiper-rtl~.swiper-button-prev -> Empty sub-selector
+  &.swiper-pagination-hidden -> Empty sub-selector
+  &.swiper-pagination-disabled -> Empty sub-selector
+  .swiper-pagination-disabled>& -> Unmatched selector: &
+  button& -> Unmatched selector: &
+  .swiper-pagination-clickable & -> Unmatched selector: &
+  & -> Empty sub-selector
+  &.swiper-pagination-bullets-dynamic -> Empty sub-selector
+  &.swiper-pagination-bullets-dynamic -> Empty sub-selector
+  .swiper-rtl & .swiper-pagination-progressbar-fill -> Unmatched selector: & .swiper-pagination-progressbar-fill
+  &.swiper-pagination-horizontal -> Empty sub-selector
+  &.swiper-pagination-vertical.swiper-pagination-progressbar-opposite -> Empty sub-selector
+  .swiper-horizontal>& -> Unmatched selector: &
+  .swiper-vertical>&.swiper-pagination-progressbar-opposite -> Unmatched selector: &.swiper-pagination-progressbar-opposite
+  &.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite -> Empty sub-selector
+  &.swiper-pagination-vertical -> Empty sub-selector
+  .swiper-horizontal>&.swiper-pagination-progressbar-opposite -> Unmatched selector: &.swiper-pagination-progressbar-opposite
+  .swiper-vertical>& -> Unmatched selector: &
+  &.swiper-scrollbar-disabled -> Empty sub-selector
+  .swiper-scrollbar-disabled>& -> Unmatched selector: &
+  &.swiper-scrollbar-horizontal -> Empty sub-selector
+  .swiper-horizontal>& -> Unmatched selector: &
+  &.swiper-scrollbar-vertical -> Empty sub-selector
+  .swiper-vertical>& -> Unmatched selector: &
+  &.swiper-free-mode -> Empty sub-selector
+  &.swiper-rtl .swiper-slide -> Empty sub-selector
+  & -> Empty sub-selector
+  & -> Empty sub-selector
+  & -> Empty sub-selector
+
+

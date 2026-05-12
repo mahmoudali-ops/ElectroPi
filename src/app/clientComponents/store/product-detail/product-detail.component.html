@@ -1,0 +1,52 @@
+@if (loading()) {
+  <p class="wrap muted">{{ 'STORE.LOADING' | t }}</p>
+} @else if (!product()) {
+  <p class="wrap muted">{{ 'STORE.EMPTY_PRODUCTS' | t }}</p>
+} @else {
+  <div class="wrap detail">
+    <nav class="crumb">
+      <a routerLink="/store">{{ 'NAV.HOME' | t }}</a>
+      <span>/</span>
+      <span>{{ product()!.name }}</span>
+    </nav>
+
+    <div class="layout">
+      <div class="gallery">
+        <div class="main-shot">
+          @if (activeImage()) {
+            <img [src]="activeImage()" [alt]="product()!.name" />
+          } @else {
+            <div class="ph">Electro</div>
+          }
+        </div>
+        @if (product()!.images?.length) {
+          <div class="thumbs">
+            @for (im of product()!.images; track im.id) {
+              <button type="button" class="tbtn" (click)="pickImage(im.imageUrl)" [class.on]="activeImage() === im.imageUrl">
+                <img [src]="im.imageUrl" alt="" />
+              </button>
+            }
+          </div>
+        }
+      </div>
+
+      <div class="info">
+        <h1>{{ product()!.name }}</h1>
+        <p class="price">{{ product()!.price | number : '1.0-2' }}</p>
+        <p class="desc">{{ product()!.description }}</p>
+        <div class="row">
+          <span class="pill">{{ 'STORE.RATING' | t }} {{ product()!.rate ?? '—' }}</span>
+          @if (!product()!.isAvailable) {
+            <span class="pill warn">{{ 'STORE.OUT_OF_STOCK' | t }}</span>
+          }
+        </div>
+        <div class="actions">
+          <button type="button" class="btn primary" [disabled]="!product()!.isAvailable" (click)="addOne()">
+            {{ 'STORE.ADD_TO_CART' | t }}
+          </button>
+          <a routerLink="/cart" class="btn ghost">{{ 'STORE.CART' | t }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+}

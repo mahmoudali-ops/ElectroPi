@@ -1,0 +1,27 @@
+/* ================= Buttons Base ================= */
+.btn {
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  padding: 0.45rem 0.85rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Hover Lift Effect */
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* ================= Primary Button ================= */
+.btn-primary {
+  background: linear-gradient(45deg, #007bff, #0056b3);
+  border: none;
+  color: #fff;
+}
+
+/* ================= Outline Secondary Hover ================= */
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: #fff;
+}

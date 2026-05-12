@@ -1,0 +1,23 @@
+<div class="wrap">
+  <h1>{{ 'STORE.ORDERS' | t }}</h1>
+  @if (loading()) {
+    <p class="muted">{{ 'STORE.LOADING' | t }}</p>
+  } @else if (!orders().length) {
+    <p class="muted">{{ 'STORE.EMPTY_PRODUCTS' | t }}</p>
+  } @else {
+    <ul class="cards">
+      @for (o of orders(); track o.id) {
+        <li>
+          <a [routerLink]="['/orders', o.id]" class="card">
+            <div class="top">
+              <span>#{{ o.id }}</span>
+              <span class="st">{{ o.status }}</span>
+            </div>
+            <div class="mid">{{ o.orderDate | date : 'medium' }}</div>
+            <div class="bot">{{ o.totalPrice | number : '1.0-2' }}</div>
+          </a>
+        </li>
+      }
+    </ul>
+  }
+</div>

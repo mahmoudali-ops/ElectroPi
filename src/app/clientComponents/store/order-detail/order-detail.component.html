@@ -1,0 +1,30 @@
+<div class="wrap">
+  <a routerLink="/orders" class="back">{{ 'STORE.BACK_TO_ORDERS' | t }}</a>
+
+  @if (loading()) {
+    <p class="muted">{{ 'STORE.LOADING' | t }}</p>
+  } @else if (!order()) {
+    <p class="muted">{{ 'STORE.EMPTY_PRODUCTS' | t }}</p>
+  } @else {
+    <h1>#{{ order()!.id }} — {{ 'STORE.ORDER_TRACKING' | t }}</h1>
+
+    <section class="panel">
+      <div class="row"><span>{{ 'STORE.STATUS' | t }}</span><strong>{{ order()!.status }}</strong></div>
+      <div class="row"><span>{{ 'STORE.PAYMENT_METHOD' | t }}</span><strong>{{ order()!.paymentMethod }}</strong></div>
+      <div class="row"><span>{{ 'STORE.ORDER_DATE' | t }}</span><strong>{{ order()!.orderDate | date : 'medium' }}</strong></div>
+      <div class="row"><span>{{ 'STORE.TOTAL' | t }}</span><strong>{{ order()!.totalPrice | number : '1.0-2' }}</strong></div>
+    </section>
+
+    <section class="panel">
+      <h2>{{ 'STORE.ITEMS' | t }}</h2>
+      <ul>
+        @for (it of order()!.orderItems; track it.id) {
+          <li>
+            <span>{{ it.productName }} × {{ it.quantity }}</span>
+            <span>{{ it.price | number : '1.0-2' }}</span>
+          </li>
+        }
+      </ul>
+    </section>
+  }
+</div>

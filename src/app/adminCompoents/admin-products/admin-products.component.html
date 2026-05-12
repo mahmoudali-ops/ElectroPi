@@ -1,0 +1,108 @@
+<div class="admin-page">
+  <div class="page-header">
+    <div>
+      <h1>Manage products</h1>
+      <p>Add, edit and remove catalog items from the admin panel.</p>
+    </div>
+    <button class="btn primary" type="button" (click)="resetForm()">New product</button>
+  </div>
+
+  <section class="form-card">
+    <h2>{{ editMode ? 'Edit product' : 'Create product' }}</h2>
+    <form (ngSubmit)="saveProduct()">
+      <div class="row">
+        <label>
+          Slug
+          <input type="text" name="slug" [(ngModel)]="productForm.slug" required />
+        </label>
+        <label>
+          Category
+          <select name="categoryId" [(ngModel)]="productForm.categoryId" required>
+            <option *ngFor="let category of categories()" [value]="category.id">{{ category.slug }}</option>
+          </select>
+        </label>
+      </div>
+      <div class="row">
+        <label>
+          Price
+          <input type="number" name="price" [(ngModel)]="productForm.price" min="0" step="0.01" required />
+        </label>
+        <label>
+          Rate
+          <input type="number" name="rate" [(ngModel)]="productForm.rate" min="0" max="5" step="0.1" required />
+        </label>
+        <label>
+          Visibility
+          <select name="isAvailable" [(ngModel)]="productForm.isAvailable">
+            <option [ngValue]="true">Available</option>
+            <option [ngValue]="false">Hidden</option>
+          </select>
+        </label>
+      </div>
+      <div class="row">
+        <label>
+          English name
+          <input type="text" name="nameEn" [(ngModel)]="productForm.nameEn" required />
+        </label>
+        <label>
+          Arabic name
+          <input type="text" name="nameAr" [(ngModel)]="productForm.nameAr" required />
+        </label>
+      </div>
+      <div class="row">
+        <label class="wide">
+          Description (EN)
+          <textarea name="descriptionEn" [(ngModel)]="productForm.descriptionEn"></textarea>
+        </label>
+      </div>
+      <div class="row">
+        <label class="wide">
+          Description (AR)
+          <textarea name="descriptionAr" [(ngModel)]="productForm.descriptionAr"></textarea>
+        </label>
+      </div>
+      <div class="actions">
+        <button class="btn primary" type="submit">{{ editMode ? 'Update product' : 'Create product' }}</button>
+        <button class="btn secondary" type="button" (click)="resetForm()">Cancel</button>
+      </div>
+      <p class="message error" *ngIf="formError()">{{ formError() }}</p>
+      <p class="message success" *ngIf="success()">{{ success() }}</p>
+    </form>
+  </section>
+
+  <section class="table-card">
+    <div class="section-header">
+      <h2>Product list</h2>
+      <span *ngIf="products().length === 0 && !loading()">No products found.</span>
+    </div>
+
+    <div class="loading" *ngIf="loading()">Loading products…</div>
+    <table *ngIf="!loading() && products().length > 0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Slug</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Status</th>
+          <th>Category</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let product of products()">
+          <td>{{ product.id }}</td>
+          <td>{{ product.slug }}</td>
+          <td>{{ product.name }}</td>
+          <td>{{ product.price | number:'1.2-2' }}</td>
+          <td>{{ product.isAvailable ? 'Visible' : 'Hidden' }}</td>
+          <td>{{ product.categoryId }}</td>
+          <td class="actions-cell">
+            <button class="btn secondary" type="button" (click)="editProduct(product)">Edit</button>
+            <button class="btn danger" type="button" (click)="deleteProduct(product.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>

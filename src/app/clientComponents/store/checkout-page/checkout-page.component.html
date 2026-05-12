@@ -1,0 +1,39 @@
+<div class="wrap">
+  <h1>{{ 'STORE.CHECKOUT' | t }}</h1>
+
+  @if (loading()) {
+    <p class="muted">{{ 'STORE.LOADING' | t }}</p>
+  } @else if (!(cart()?.items?.length)) {
+    <p class="muted">{{ 'STORE.CART_EMPTY' | t }}</p>
+    <a routerLink="/store" class="link">{{ 'STORE.CONTINUE_SHOPPING' | t }}</a>
+  } @else {
+    <section class="panel">
+      <h2>{{ 'STORE.ITEMS' | t }}</h2>
+      <ul>
+        @for (it of cart()!.items; track it.id) {
+          <li>
+            <span>{{ it.productName }} × {{ it.quantity }}</span>
+            <span>{{ it.total | number : '1.0-2' }}</span>
+          </li>
+        }
+      </ul>
+      <div class="total">{{ 'STORE.TOTAL' | t }}: <strong>{{ cart()!.totalPrice | number : '1.0-2' }}</strong></div>
+    </section>
+
+    <section class="panel">
+      <h2>{{ 'STORE.PAYMENT_METHOD' | t }}</h2>
+      <label class="radio">
+        <input type="radio" name="pm" [(ngModel)]="paymentMethod" value="CashOnDelivery" />
+        {{ 'STORE.PAY_COD' | t }}
+      </label>
+      <label class="radio">
+        <input type="radio" name="pm" [(ngModel)]="paymentMethod" value="Online" />
+        {{ 'STORE.PAY_ONLINE' | t }}
+      </label>
+    </section>
+
+    <button type="button" class="btn" [disabled]="busy()" (click)="submit()">
+      {{ 'STORE.PLACE_ORDER' | t }}
+    </button>
+  }
+</div>

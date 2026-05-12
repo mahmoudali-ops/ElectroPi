@@ -1,0 +1,43 @@
+<div class="admin-page">
+  <div class="page-header">
+    <div>
+      <h1>Manage orders</h1>
+      <p>Approve and update order statuses from the admin dashboard.</p>
+    </div>
+  </div>
+
+  <section class="table-card">
+    <div *ngIf="feedback()" class="message success">{{ feedback() }}</div>
+    <div class="loading" *ngIf="loading()">Loading orders…</div>
+    <div *ngIf="!loading() && orders().length === 0" class="empty-state">No orders to show.</div>
+
+    <table *ngIf="!loading() && orders().length > 0">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>User</th>
+          <th>Total</th>
+          <th>Date</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let order of orders()">
+          <td>{{ order.id }}</td>
+          <td>{{ order.userId }}</td>
+          <td>{{ order.totalPrice | number:'1.2-2' }}</td>
+          <td>{{ order.orderDate | date:'medium' }}</td>
+          <td><span class="status-pill" [ngClass]="getStatusClass(order.status)">{{ order.status }}</span></td>
+          <td class="actions-cell">
+            <select class="status-select" [value]="order.status" (change)="updateStatus(order.id, $any($event.target).value)">
+              <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
+            </select>
+            <button class="btn secondary" type="button" (click)="approveOrder(order)">Approve</button>
+            <button class="btn danger" type="button" (click)="deleteOrder(order.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>

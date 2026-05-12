@@ -1,0 +1,77 @@
+<section class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6 col-lg-5">
+      <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-body p-5">
+          <div class="text-center mb-4">
+            <img src="assets/images/elec logo.png" alt="Site Logo" class="mb-3" height="48" />
+            <h3 class="fw-bold">{{ 'STORE.BRAND' | t }}</h3>
+            <p class="text-muted small mb-0">{{ 'STORE.LOGIN' | t }}</p>
+          </div>
+
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+              <label for="email" class="form-label">{{ 'STORE.EMAIL' | t }}</label>
+              <input
+                [ngClass]="{
+                  'is-invalid':
+                    loginForm.get('email')?.invalid &&
+                    (loginForm.get('email')?.touched || loginForm.get('email')?.dirty),
+                  'is-valid':
+                    loginForm.get('email')?.valid &&
+                    (loginForm.get('email')?.touched || loginForm.get('email')?.dirty)
+                }"
+                id="email"
+                type="email"
+                class="form-control"
+                formControlName="email"
+                placeholder="example@email.com"
+              />
+              @if (loginForm.get('email')?.invalid && (loginForm.get('email')?.touched || loginForm.get('email')?.dirty)) {
+                <div class="text-danger small mt-1">Valid Email is required.</div>
+              }
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label">{{ 'STORE.PASSWORD' | t }}</label>
+              <input
+                [ngClass]="{
+                  'is-invalid':
+                    loginForm.get('password')?.invalid &&
+                    (loginForm.get('password')?.touched || loginForm.get('password')?.dirty),
+                  'is-valid':
+                    loginForm.get('password')?.valid &&
+                    (loginForm.get('password')?.touched || loginForm.get('password')?.dirty)
+                }"
+                id="password"
+                type="password"
+                class="form-control"
+                formControlName="password"
+                placeholder="••••••"
+              />
+              @if (
+                loginForm.get('password')?.invalid &&
+                (loginForm.get('password')?.touched || loginForm.get('password')?.dirty)
+              ) {
+                <div class="text-danger small mt-1">Password is required.</div>
+              }
+            </div>
+
+            <div class="d-flex justify-content-center gap-3 mt-4">
+              <button type="submit" class="btn btn-lg btn-primary px-4 shadow-sm">
+                <i class="fa-solid fa-right-to-bracket me-2"></i> {{ 'STORE.SUBMIT_LOGIN' | t }}
+              </button>
+              <a routerLink="/register" class="btn btn-lg btn-outline-secondary px-4 shadow-sm">
+                <i class="fa-solid fa-user-plus me-2"></i> Register
+              </a>
+            </div>
+
+            @if (IsSccuess) {
+              <div class="alert alert-success text-center mt-3">OK</div>
+            }
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
