@@ -23,7 +23,7 @@ export const EN = {
       LOGIN: 'Login'
     },
     FOOTER: {
-      DESC: "Explore Egypt’s beauty with our handpicked tours, private excursions, Red Sea trips, desert safaris, and historical adventures in Cairo, Luxor, and beyond.",
+DESC: "Discover delicious flavors with our handpicked food experiences, local cuisine, gourmet meals, street food tours, seafood delights, and authentic dining adventures across Egypt." ,
       QUICK_LINKS: 'Quick Links'
     },
     SECTION: {
