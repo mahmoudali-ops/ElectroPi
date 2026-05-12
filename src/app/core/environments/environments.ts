@@ -1,4 +1,4 @@
 export const environment = {
-  BaseUrl: 'https://localhost:7065',    //https://sharkwolrd.runasp.net
+  BaseUrl: 'https://electros.runasp.net',    //https://sharkwolrd.runasp.net
     UrlServer:'http://localhost:4200'
  };
